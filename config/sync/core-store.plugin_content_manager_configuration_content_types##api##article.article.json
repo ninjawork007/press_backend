@@ -1,0 +1,360 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::article.article",
+  "value": {
+    "uid": "api::article.article",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "name",
+      "defaultSortBy": "name",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "name": {
+        "edit": {
+          "label": "name",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "name",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "status": {
+        "edit": {
+          "label": "status",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "status",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "profile": {
+        "edit": {
+          "label": "profile",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "profile",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "drafts": {
+        "edit": {
+          "label": "drafts",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "drafts",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "publish_date": {
+        "edit": {
+          "label": "publish_date",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "publish_date",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "campaign": {
+        "edit": {
+          "label": "campaign",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "campaign",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "revisions": {
+        "edit": {
+          "label": "revisions",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "revisions",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "url": {
+        "edit": {
+          "label": "url",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "url",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "feedback": {
+        "edit": {
+          "label": "feedback",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "feedback",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "is_written_by_user": {
+        "edit": {
+          "label": "is_written_by_user",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "is_written_by_user",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "approved_for_publishing": {
+        "edit": {
+          "label": "approved_for_publishing",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "approved_for_publishing",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "draftCount": {
+        "edit": {
+          "label": "draftCount",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "draftCount",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "purchased_publication": {
+        "edit": {
+          "label": "purchased_publication",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "id"
+        },
+        "list": {
+          "label": "purchased_publication",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "messages": {
+        "edit": {
+          "label": "messages",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "id"
+        },
+        "list": {
+          "label": "messages",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "approval_date": {
+        "edit": {
+          "label": "approval_date",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "approval_date",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "images": {
+        "edit": {
+          "label": "images",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "images",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "name",
+        "status",
+        "profile"
+      ],
+      "editRelations": [
+        "profile",
+        "campaign",
+        "purchased_publication",
+        "messages"
+      ],
+      "edit": [
+        [
+          {
+            "name": "name",
+            "size": 6
+          },
+          {
+            "name": "status",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "drafts",
+            "size": 6
+          },
+          {
+            "name": "publish_date",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "revisions",
+            "size": 6
+          },
+          {
+            "name": "url",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "feedback",
+            "size": 6
+          },
+          {
+            "name": "is_written_by_user",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "approved_for_publishing",
+            "size": 4
+          },
+          {
+            "name": "draftCount",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "approval_date",
+            "size": 6
+          },
+          {
+            "name": "images",
+            "size": 6
+          }
+        ]
+      ]
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

@@ -1,0 +1,150 @@
+{
+  "kind": "collectionType",
+  "collectionName": "profiles",
+  "info": {
+    "singularName": "profile",
+    "pluralName": "profiles",
+    "displayName": "Profile",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::article.article",
+      "mappedBy": "profile"
+    },
+    "campaigns": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::campaign.campaign",
+      "mappedBy": "profile"
+    },
+    "orders": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::order.order",
+      "mappedBy": "profile"
+    },
+    "purchased_publications": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::purchased-publication.purchased-publication",
+      "mappedBy": "profile"
+    },
+    "company_type": {
+      "type": "enumeration",
+      "enum": [
+        "agency",
+        "public-relations",
+        "business-brand",
+        "personal",
+        "publicist",
+        "affiliate",
+        "other"
+      ]
+    },
+    "users": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "profile"
+    },
+    "email": {
+      "type": "email"
+    },
+    "messages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::message.message",
+      "mappedBy": "profile"
+    },
+    "is_affiliate": {
+      "type": "boolean"
+    },
+    "referral_received": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::referral.referral",
+      "mappedBy": "profile"
+    },
+    "referrals": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::referral.referral",
+      "mappedBy": "referrer"
+    },
+    "whitelabel_site": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::site.site",
+      "inversedBy": "owner"
+    },
+    "is_whitelabel": {
+      "type": "boolean"
+    },
+    "paypal_email": {
+      "type": "email"
+    },
+    "address": {
+      "type": "string"
+    },
+    "address_line_2": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "zipcode": {
+      "type": "string"
+    },
+    "bank_routing_number": {
+      "type": "string"
+    },
+    "bank_account_number": {
+      "type": "string"
+    },
+    "w9": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "credits": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::credit.credit",
+      "mappedBy": "profile"
+    },
+    "site": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::site.site",
+      "inversedBy": "profiles"
+    },
+    "stripe_customer_id": {
+      "type": "string"
+    },
+    "can_view_secret_data": {
+      "type": "boolean"
+    }
+  }
+}

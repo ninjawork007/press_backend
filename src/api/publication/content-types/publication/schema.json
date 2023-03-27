@@ -1,0 +1,165 @@
+{
+  "kind": "collectionType",
+  "collectionName": "publications",
+  "info": {
+    "singularName": "publication",
+    "pluralName": "publications",
+    "displayName": "Publication",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "website_url": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "turnaround_time": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal",
+      "required": true
+    },
+    "is_do_follow": {
+      "type": "boolean"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "lifestyle",
+        "fashion",
+        "music",
+        "entertainment",
+        "business",
+        "crypto",
+        "technology",
+        "news"
+      ]
+    },
+    "domain_authority": {
+      "type": "integer"
+    },
+    "image": {
+      "type": "enumeration",
+      "enum": [
+        "Y",
+        "N",
+        "M"
+      ]
+    },
+    "news": {
+      "type": "enumeration",
+      "enum": [
+        "Y",
+        "N",
+        "M"
+      ]
+    },
+    "is_sponsored": {
+      "type": "enumeration",
+      "enum": [
+        "Y",
+        "N",
+        "N (Disclaimer)",
+        "YN"
+      ]
+    },
+    "is_exclusive": {
+      "type": "boolean"
+    },
+    "requirements": {
+      "type": "richtext"
+    },
+    "popularity_rank": {
+      "type": "integer",
+      "default": 0
+    },
+    "is_indexed": {
+      "type": "enumeration",
+      "enum": [
+        "Y",
+        "N",
+        "M"
+      ]
+    },
+    "publication_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::publication-category.publication-category",
+      "inversedBy": "publications"
+    },
+    "is_featured": {
+      "type": "boolean"
+    },
+    "internal_cost": {
+      "type": "decimal"
+    },
+    "min_turnaround_time_in_days": {
+      "type": "integer"
+    },
+    "max_turnaround_time_in_days": {
+      "type": "integer"
+    },
+    "reseller_price": {
+      "type": "decimal",
+      "required": false
+    },
+    "domain_ranking": {
+      "type": "integer"
+    },
+    "is_press_release": {
+      "type": "boolean"
+    },
+    "is_listicle_approved": {
+      "type": "boolean"
+    },
+    "requires_inquiry": {
+      "type": "boolean"
+    },
+    "word_logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "is_hidden": {
+      "type": "boolean",
+      "default": false
+    },
+    "example_screenshot": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "do_follow_links_allowed": {
+      "type": "string"
+    }
+  }
+}

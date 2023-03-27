@@ -1,0 +1,67 @@
+{
+  "name": "Public",
+  "description": "Default role given to unauthenticated user.",
+  "type": "public",
+  "permissions": [
+    {
+      "action": "api::publication-category.publication-category.create"
+    },
+    {
+      "action": "api::publication-category.publication-category.find"
+    },
+    {
+      "action": "api::publication-category.publication-category.findOne"
+    },
+    {
+      "action": "api::publication-category.publication-category.update"
+    },
+    {
+      "action": "api::publication.publication.create"
+    },
+    {
+      "action": "api::publication.publication.find"
+    },
+    {
+      "action": "api::publication.publication.findOne"
+    },
+    {
+      "action": "api::publication.publication.update"
+    },
+    {
+      "action": "api::site-publication.site-publication.create"
+    },
+    {
+      "action": "api::site-publication.site-publication.find"
+    },
+    {
+      "action": "api::site-publication.site-publication.findOne"
+    },
+    {
+      "action": "api::site-publication.site-publication.update"
+    },
+    {
+      "action": "api::site.site.create"
+    },
+    {
+      "action": "api::site.site.find"
+    },
+    {
+      "action": "api::site.site.findOne"
+    },
+    {
+      "action": "api::site.site.update"
+    },
+    {
+      "action": "plugin::users-permissions.auth.callback"
+    },
+    {
+      "action": "plugin::users-permissions.auth.connect"
+    },
+    {
+      "action": "plugin::users-permissions.auth.register"
+    },
+    {
+      "action": "plugin::users-permissions.user.me"
+    }
+  ]
+}

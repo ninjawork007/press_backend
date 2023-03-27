@@ -1,0 +1,158 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::referral.referral",
+  "value": {
+    "uid": "api::referral.referral",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "profile": {
+        "edit": {
+          "label": "profile",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "profile",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "profile_id": {
+        "edit": {
+          "label": "profile_id",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "profile_id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "referrer": {
+        "edit": {
+          "label": "referrer",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "referrer",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "is_affiliate": {
+        "edit": {
+          "label": "is_affiliate",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "is_affiliate",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "signup_date": {
+        "edit": {
+          "label": "signup_date",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "signup_date",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "profile",
+        "profile_id",
+        "referrer"
+      ],
+      "editRelations": [
+        "profile",
+        "referrer"
+      ],
+      "edit": [
+        [
+          {
+            "name": "profile_id",
+            "size": 4
+          },
+          {
+            "name": "is_affiliate",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "signup_date",
+            "size": 6
+          }
+        ]
+      ]
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

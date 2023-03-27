@@ -1,0 +1,530 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::profile.profile",
+  "value": {
+    "uid": "api::profile.profile",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "name",
+      "defaultSortBy": "name",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "name": {
+        "edit": {
+          "label": "name",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "name",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "article": {
+        "edit": {
+          "label": "article",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "article",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "campaigns": {
+        "edit": {
+          "label": "campaigns",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "campaigns",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "orders": {
+        "edit": {
+          "label": "orders",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "id"
+        },
+        "list": {
+          "label": "orders",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "purchased_publications": {
+        "edit": {
+          "label": "purchased_publications",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "id"
+        },
+        "list": {
+          "label": "purchased_publications",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "company_type": {
+        "edit": {
+          "label": "company_type",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "company_type",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "users": {
+        "edit": {
+          "label": "users",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "username"
+        },
+        "list": {
+          "label": "users",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "email": {
+        "edit": {
+          "label": "email",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "email",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "messages": {
+        "edit": {
+          "label": "messages",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "id"
+        },
+        "list": {
+          "label": "messages",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "is_affiliate": {
+        "edit": {
+          "label": "is_affiliate",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "is_affiliate",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "referral_received": {
+        "edit": {
+          "label": "referral_received",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "id"
+        },
+        "list": {
+          "label": "referral_received",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "referrals": {
+        "edit": {
+          "label": "referrals",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "id"
+        },
+        "list": {
+          "label": "referrals",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "whitelabel_site": {
+        "edit": {
+          "label": "whitelabel_site",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "whitelabel_site",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "is_whitelabel": {
+        "edit": {
+          "label": "is_whitelabel",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "is_whitelabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "paypal_email": {
+        "edit": {
+          "label": "paypal_email",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "paypal_email",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "address": {
+        "edit": {
+          "label": "address",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "address",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "address_line_2": {
+        "edit": {
+          "label": "address_line_2",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "address_line_2",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "city": {
+        "edit": {
+          "label": "city",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "city",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "state": {
+        "edit": {
+          "label": "state",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "state",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "country": {
+        "edit": {
+          "label": "country",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "country",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "zipcode": {
+        "edit": {
+          "label": "zipcode",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "zipcode",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "bank_routing_number": {
+        "edit": {
+          "label": "bank_routing_number",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "bank_routing_number",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "bank_account_number": {
+        "edit": {
+          "label": "bank_account_number",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "bank_account_number",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "w9": {
+        "edit": {
+          "label": "w9",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "w9",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "credits": {
+        "edit": {
+          "label": "credits",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "id"
+        },
+        "list": {
+          "label": "credits",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "site": {
+        "edit": {
+          "label": "site",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "site",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "name",
+        "article",
+        "campaigns"
+      ],
+      "editRelations": [
+        "article",
+        "campaigns",
+        "orders",
+        "purchased_publications",
+        "users",
+        "messages",
+        "referral_received",
+        "referrals",
+        "whitelabel_site",
+        "credits",
+        "site"
+      ],
+      "edit": [
+        [
+          {
+            "name": "name",
+            "size": 6
+          },
+          {
+            "name": "company_type",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "email",
+            "size": 6
+          },
+          {
+            "name": "is_affiliate",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "is_whitelabel",
+            "size": 4
+          },
+          {
+            "name": "paypal_email",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "address",
+            "size": 6
+          },
+          {
+            "name": "address_line_2",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "city",
+            "size": 6
+          },
+          {
+            "name": "state",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "country",
+            "size": 6
+          },
+          {
+            "name": "zipcode",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "bank_routing_number",
+            "size": 6
+          },
+          {
+            "name": "bank_account_number",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "w9",
+            "size": 6
+          }
+        ]
+      ]
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "Order",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "profile": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::profile.profile",
+      "inversedBy": "orders"
+    },
+    "total": {
+      "type": "decimal"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "created",
+        "paid",
+        "completed",
+        "canceled"
+      ]
+    },
+    "email": {
+      "type": "email"
+    },
+    "items": {
+      "type": "json"
+    },
+    "date_paid": {
+      "type": "datetime"
+    },
+    "site": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::site.site",
+      "inversedBy": "orders"
+    },
+    "ref_id": {
+      "type": "integer"
+    },
+    "client_secret": {
+      "type": "string"
+    },
+    "coupon": {
+      "type": "string"
+    },
+    "credits_applied": {
+      "type": "decimal"
+    },
+    "processing_fee": {
+      "type": "decimal"
+    },
+    "subtotal": {
+      "type": "decimal"
+    }
+  }
+}

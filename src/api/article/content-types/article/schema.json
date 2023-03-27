@@ -1,0 +1,115 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articles",
+  "info": {
+    "singularName": "article",
+    "pluralName": "articles",
+    "displayName": "Article",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "reviewing",
+        "requires-action",
+        "editing",
+        "publishing",
+        "completed",
+        "rejected"
+      ]
+    },
+    "profile": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::profile.profile",
+      "inversedBy": "article"
+    },
+    "drafts": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "publish_date": {
+      "type": "date"
+    },
+    "campaign": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::campaign.campaign",
+      "inversedBy": "articles"
+    },
+    "revisions": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "url": {
+      "type": "string"
+    },
+    "feedback": {
+      "type": "text"
+    },
+    "is_written_by_user": {
+      "type": "boolean"
+    },
+    "approved_for_publishing": {
+      "type": "boolean"
+    },
+    "draftCount": {
+      "type": "integer",
+      "default": 0
+    },
+    "purchased_publication": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::purchased-publication.purchased-publication",
+      "mappedBy": "article"
+    },
+    "messages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::message.message",
+      "mappedBy": "article"
+    },
+    "approval_date": {
+      "type": "datetime"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "google_doc_url": {
+      "type": "string"
+    },
+    "is_writing": {
+      "type": "boolean"
+    }
+  }
+}

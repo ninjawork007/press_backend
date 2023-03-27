@@ -1,0 +1,160 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sites",
+  "info": {
+    "singularName": "site",
+    "pluralName": "sites",
+    "displayName": "Site",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "ogImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "customDomain": {
+      "type": "string",
+      "unique": true
+    },
+    "subdomain": {
+      "type": "string",
+      "unique": true
+    },
+    "email": {
+      "type": "email"
+    },
+    "site_publication_categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::publication-category.publication-category"
+    },
+    "site_publications": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::site-publication.site-publication",
+      "mappedBy": "site"
+    },
+    "primary_color": {
+      "type": "string"
+    },
+    "secondary_color": {
+      "type": "string"
+    },
+    "is_live": {
+      "type": "boolean"
+    },
+    "is_sendgrid_connected": {
+      "type": "boolean"
+    },
+    "email_password": {
+      "type": "string"
+    },
+    "has_updated_publications": {
+      "type": "boolean"
+    },
+    "orders": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::order.order",
+      "mappedBy": "site"
+    },
+    "purchased_publications": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::purchased-publication.purchased-publication",
+      "mappedBy": "site"
+    },
+    "owner": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::profile.profile",
+      "mappedBy": "whitelabel_site"
+    },
+    "profiles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::profile.profile",
+      "mappedBy": "site"
+    },
+    "use_base_publication_pricing": {
+      "type": "boolean"
+    },
+    "favicon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos",
+        "audios",
+        "files"
+      ]
+    },
+    "is_domain_connected": {
+      "type": "boolean"
+    },
+    "primary_font": {
+      "type": "string"
+    },
+    "secondary_font": {
+      "type": "string"
+    },
+    "publication_inquiries": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::publication-inquiry.publication-inquiry",
+      "mappedBy": "site"
+    },
+    "is_internal": {
+      "type": "boolean",
+      "default": false
+    },
+    "facebook_pixel_id": {
+      "type": "string"
+    },
+    "klaviyo_public_key": {
+      "type": "string"
+    },
+    "intercom_id": {
+      "type": "string"
+    },
+    "hubspot_public_key": {
+      "type": "string"
+    },
+    "show_secret_data": {
+      "type": "boolean",
+      "default": false
+    },
+    "tidio_id": {
+      "type": "string"
+    }
+  }
+}

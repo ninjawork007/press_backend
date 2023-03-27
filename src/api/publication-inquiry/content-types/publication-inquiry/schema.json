@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "publication_inquiries",
+  "info": {
+    "singularName": "publication-inquiry",
+    "pluralName": "publication-inquiries",
+    "displayName": "Publication Inquiry",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "phone_number": {
+      "type": "string"
+    },
+    "site": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::site.site",
+      "inversedBy": "publication_inquiries"
+    },
+    "publication": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::publication.publication"
+    },
+    "notes": {
+      "type": "richtext"
+    }
+  }
+}

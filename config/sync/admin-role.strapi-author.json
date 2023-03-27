@@ -1,0 +1,1114 @@
+{
+  "name": "Author",
+  "code": "strapi-author",
+  "description": "Authors can manage the content they have created.",
+  "permissions": [
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::article.article",
+      "properties": {
+        "fields": [
+          "name",
+          "status",
+          "profile",
+          "drafts",
+          "publish_date",
+          "campaign",
+          "revisions",
+          "url",
+          "feedback",
+          "is_written_by_user",
+          "approved_for_publishing",
+          "draftCount",
+          "purchased_publication",
+          "messages",
+          "approval_date",
+          "images"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::article.article",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::article.article",
+      "properties": {
+        "fields": [
+          "name",
+          "status",
+          "profile",
+          "drafts",
+          "publish_date",
+          "campaign",
+          "revisions",
+          "url",
+          "feedback",
+          "is_written_by_user",
+          "approved_for_publishing",
+          "draftCount",
+          "purchased_publication",
+          "messages",
+          "approval_date",
+          "images"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::article.article",
+      "properties": {
+        "fields": [
+          "name",
+          "status",
+          "profile",
+          "drafts",
+          "publish_date",
+          "campaign",
+          "revisions",
+          "url",
+          "feedback",
+          "is_written_by_user",
+          "approved_for_publishing",
+          "draftCount",
+          "purchased_publication",
+          "messages",
+          "approval_date",
+          "images"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::campaign.campaign",
+      "properties": {
+        "fields": [
+          "name",
+          "images",
+          "profile",
+          "articles",
+          "questionnaire",
+          "status",
+          "reviewCount",
+          "messages"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::campaign.campaign",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::campaign.campaign",
+      "properties": {
+        "fields": [
+          "name",
+          "images",
+          "profile",
+          "articles",
+          "questionnaire",
+          "status",
+          "reviewCount",
+          "messages"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::campaign.campaign",
+      "properties": {
+        "fields": [
+          "name",
+          "images",
+          "profile",
+          "articles",
+          "questionnaire",
+          "status",
+          "reviewCount",
+          "messages"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::credit.credit",
+      "properties": {
+        "fields": [
+          "amount",
+          "type",
+          "profile"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::credit.credit",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::credit.credit",
+      "properties": {
+        "fields": [
+          "amount",
+          "type",
+          "profile"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::credit.credit",
+      "properties": {
+        "fields": [
+          "amount",
+          "type",
+          "profile"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::draft.draft",
+      "properties": {
+        "fields": [
+          "name",
+          "document",
+          "content"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::draft.draft",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::draft.draft",
+      "properties": {
+        "fields": [
+          "name",
+          "document",
+          "content"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::draft.draft",
+      "properties": {
+        "fields": [
+          "name",
+          "document",
+          "content"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::message.message",
+      "properties": {
+        "fields": [
+          "text",
+          "article",
+          "campaign",
+          "profile",
+          "type",
+          "is_from_client"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::message.message",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::message.message",
+      "properties": {
+        "fields": [
+          "text",
+          "article",
+          "campaign",
+          "profile",
+          "type",
+          "is_from_client"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::message.message",
+      "properties": {
+        "fields": [
+          "text",
+          "article",
+          "campaign",
+          "profile",
+          "type",
+          "is_from_client"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::order.order",
+      "properties": {
+        "fields": [
+          "profile",
+          "total",
+          "status",
+          "email",
+          "items",
+          "date_paid",
+          "site"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::order.order",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::order.order",
+      "properties": {
+        "fields": [
+          "profile",
+          "total",
+          "status",
+          "email",
+          "items",
+          "date_paid",
+          "site"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::order.order",
+      "properties": {
+        "fields": [
+          "profile",
+          "total",
+          "status",
+          "email",
+          "items",
+          "date_paid",
+          "site"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::payment.payment",
+      "properties": {
+        "fields": [
+          "amount",
+          "date"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::payment.payment",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::payment.payment",
+      "properties": {
+        "fields": [
+          "amount",
+          "date"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::payment.payment",
+      "properties": {
+        "fields": [
+          "amount",
+          "date"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::privacy-policy.privacy-policy",
+      "properties": {
+        "fields": [
+          "title",
+          "content"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::privacy-policy.privacy-policy",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::privacy-policy.privacy-policy",
+      "properties": {
+        "fields": [
+          "title",
+          "content"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::privacy-policy.privacy-policy",
+      "properties": {
+        "fields": [
+          "title",
+          "content"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::profile.profile",
+      "properties": {
+        "fields": [
+          "name",
+          "article",
+          "campaigns",
+          "orders",
+          "purchased_publications",
+          "company_type",
+          "users",
+          "email",
+          "messages",
+          "is_affiliate",
+          "referral_received",
+          "referrals",
+          "whitelabel_site",
+          "is_whitelabel",
+          "paypal_email",
+          "address",
+          "address_line_2",
+          "city",
+          "state",
+          "country",
+          "zipcode",
+          "bank_routing_number",
+          "bank_account_number",
+          "w9",
+          "credits",
+          "site"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::profile.profile",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::profile.profile",
+      "properties": {
+        "fields": [
+          "name",
+          "article",
+          "campaigns",
+          "orders",
+          "purchased_publications",
+          "company_type",
+          "users",
+          "email",
+          "messages",
+          "is_affiliate",
+          "referral_received",
+          "referrals",
+          "whitelabel_site",
+          "is_whitelabel",
+          "paypal_email",
+          "address",
+          "address_line_2",
+          "city",
+          "state",
+          "country",
+          "zipcode",
+          "bank_routing_number",
+          "bank_account_number",
+          "w9",
+          "credits",
+          "site"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::profile.profile",
+      "properties": {
+        "fields": [
+          "name",
+          "article",
+          "campaigns",
+          "orders",
+          "purchased_publications",
+          "company_type",
+          "users",
+          "email",
+          "messages",
+          "is_affiliate",
+          "referral_received",
+          "referrals",
+          "whitelabel_site",
+          "is_whitelabel",
+          "paypal_email",
+          "address",
+          "address_line_2",
+          "city",
+          "state",
+          "country",
+          "zipcode",
+          "bank_routing_number",
+          "bank_account_number",
+          "w9",
+          "credits",
+          "site"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::publication-category.publication-category",
+      "properties": {
+        "fields": [
+          "name",
+          "publications"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::publication-category.publication-category",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::publication-category.publication-category",
+      "properties": {
+        "fields": [
+          "name",
+          "publications"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::publication-category.publication-category",
+      "properties": {
+        "fields": [
+          "name",
+          "publications"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::publication.publication",
+      "properties": {
+        "fields": [
+          "name",
+          "website_url",
+          "logo",
+          "turnaround_time",
+          "price",
+          "is_do_follow",
+          "category",
+          "domain_authority",
+          "image",
+          "news",
+          "is_sponsored",
+          "is_exclusive",
+          "requirements",
+          "popularity_rank",
+          "is_indexed",
+          "publication_categories",
+          "is_featured",
+          "internal_cost",
+          "min_turnaround_time_in_days",
+          "max_turnaround_time_in_days",
+          "reseller_price",
+          "domain_ranking"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::publication.publication",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::publication.publication",
+      "properties": {
+        "fields": [
+          "name",
+          "website_url",
+          "logo",
+          "turnaround_time",
+          "price",
+          "is_do_follow",
+          "category",
+          "domain_authority",
+          "image",
+          "news",
+          "is_sponsored",
+          "is_exclusive",
+          "requirements",
+          "popularity_rank",
+          "is_indexed",
+          "publication_categories",
+          "is_featured",
+          "internal_cost",
+          "min_turnaround_time_in_days",
+          "max_turnaround_time_in_days",
+          "reseller_price",
+          "domain_ranking"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::publication.publication",
+      "properties": {
+        "fields": [
+          "name",
+          "website_url",
+          "logo",
+          "turnaround_time",
+          "price",
+          "is_do_follow",
+          "category",
+          "domain_authority",
+          "image",
+          "news",
+          "is_sponsored",
+          "is_exclusive",
+          "requirements",
+          "popularity_rank",
+          "is_indexed",
+          "publication_categories",
+          "is_featured",
+          "internal_cost",
+          "min_turnaround_time_in_days",
+          "max_turnaround_time_in_days",
+          "reseller_price",
+          "domain_ranking"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::purchased-publication.purchased-publication",
+      "properties": {
+        "fields": [
+          "publication",
+          "email",
+          "order",
+          "profile",
+          "article",
+          "is_accounting_completed",
+          "accounting_completion_date",
+          "price",
+          "site",
+          "status"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::purchased-publication.purchased-publication",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::purchased-publication.purchased-publication",
+      "properties": {
+        "fields": [
+          "publication",
+          "email",
+          "order",
+          "profile",
+          "article",
+          "is_accounting_completed",
+          "accounting_completion_date",
+          "price",
+          "site",
+          "status"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::purchased-publication.purchased-publication",
+      "properties": {
+        "fields": [
+          "publication",
+          "email",
+          "order",
+          "profile",
+          "article",
+          "is_accounting_completed",
+          "accounting_completion_date",
+          "price",
+          "site",
+          "status"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::referral.referral",
+      "properties": {
+        "fields": [
+          "profile",
+          "profile_id",
+          "referrer",
+          "is_affiliate",
+          "signup_date"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::referral.referral",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::referral.referral",
+      "properties": {
+        "fields": [
+          "profile",
+          "profile_id",
+          "referrer",
+          "is_affiliate",
+          "signup_date"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::referral.referral",
+      "properties": {
+        "fields": [
+          "profile",
+          "profile_id",
+          "referrer",
+          "is_affiliate",
+          "signup_date"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::site-publication.site-publication",
+      "properties": {
+        "fields": [
+          "publication",
+          "price",
+          "site",
+          "is_hidden",
+          "is_featured"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::site-publication.site-publication",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::site-publication.site-publication",
+      "properties": {
+        "fields": [
+          "publication",
+          "price",
+          "site",
+          "is_hidden",
+          "is_featured"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::site-publication.site-publication",
+      "properties": {
+        "fields": [
+          "publication",
+          "price",
+          "site",
+          "is_hidden",
+          "is_featured"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::site.site",
+      "properties": {
+        "fields": [
+          "name",
+          "description",
+          "logo",
+          "ogImage",
+          "customDomain",
+          "subdomain",
+          "email",
+          "site_publication_categories",
+          "site_publications",
+          "primary_color",
+          "secondary_color",
+          "is_live",
+          "is_sendgrid_connected",
+          "email_password",
+          "has_updated_publications",
+          "orders",
+          "purchased_publications",
+          "owner",
+          "profiles",
+          "use_base_publication_pricing"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::site.site",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::site.site",
+      "properties": {
+        "fields": [
+          "name",
+          "description",
+          "logo",
+          "ogImage",
+          "customDomain",
+          "subdomain",
+          "email",
+          "site_publication_categories",
+          "site_publications",
+          "primary_color",
+          "secondary_color",
+          "is_live",
+          "is_sendgrid_connected",
+          "email_password",
+          "has_updated_publications",
+          "orders",
+          "purchased_publications",
+          "owner",
+          "profiles",
+          "use_base_publication_pricing"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::site.site",
+      "properties": {
+        "fields": [
+          "name",
+          "description",
+          "logo",
+          "ogImage",
+          "customDomain",
+          "subdomain",
+          "email",
+          "site_publication_categories",
+          "site_publications",
+          "primary_color",
+          "secondary_color",
+          "is_live",
+          "is_sendgrid_connected",
+          "email_password",
+          "has_updated_publications",
+          "orders",
+          "purchased_publications",
+          "owner",
+          "profiles",
+          "use_base_publication_pricing"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::terms-of-service.terms-of-service",
+      "properties": {
+        "fields": [
+          "content",
+          "title"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::terms-of-service.terms-of-service",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::terms-of-service.terms-of-service",
+      "properties": {
+        "fields": [
+          "content",
+          "title"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::terms-of-service.terms-of-service",
+      "properties": {
+        "fields": [
+          "content",
+          "title"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::upload.assets.copy-link",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::upload.assets.create",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::upload.assets.download",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::upload.assets.update",
+      "subject": null,
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::upload.read",
+      "subject": null,
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    }
+  ]
+}

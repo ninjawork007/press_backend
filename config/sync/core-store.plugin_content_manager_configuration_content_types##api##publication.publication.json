@@ -1,0 +1,482 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::publication.publication",
+  "value": {
+    "uid": "api::publication.publication",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "name",
+      "defaultSortBy": "name",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "name": {
+        "edit": {
+          "label": "name",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "name",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "website_url": {
+        "edit": {
+          "label": "website_url",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "website_url",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "logo": {
+        "edit": {
+          "label": "logo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "logo",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "turnaround_time": {
+        "edit": {
+          "label": "turnaround_time",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "turnaround_time",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "price": {
+        "edit": {
+          "label": "price",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "price",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "is_do_follow": {
+        "edit": {
+          "label": "is_do_follow",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "is_do_follow",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "category": {
+        "edit": {
+          "label": "category",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "category",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "domain_authority": {
+        "edit": {
+          "label": "domain_authority",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "domain_authority",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "image": {
+        "edit": {
+          "label": "image",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "image",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "news": {
+        "edit": {
+          "label": "news",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "news",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "is_sponsored": {
+        "edit": {
+          "label": "is_sponsored",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "is_sponsored",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "is_exclusive": {
+        "edit": {
+          "label": "is_exclusive",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "is_exclusive",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "requirements": {
+        "edit": {
+          "label": "requirements",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "requirements",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "popularity_rank": {
+        "edit": {
+          "label": "popularity_rank",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "popularity_rank",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "is_indexed": {
+        "edit": {
+          "label": "is_indexed",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "is_indexed",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "publication_categories": {
+        "edit": {
+          "label": "publication_categories",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "publication_categories",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "is_featured": {
+        "edit": {
+          "label": "is_featured",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "is_featured",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "internal_cost": {
+        "edit": {
+          "label": "internal_cost",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "internal_cost",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "min_turnaround_time_in_days": {
+        "edit": {
+          "label": "min_turnaround_time_in_days",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "min_turnaround_time_in_days",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "max_turnaround_time_in_days": {
+        "edit": {
+          "label": "max_turnaround_time_in_days",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "max_turnaround_time_in_days",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "reseller_price": {
+        "edit": {
+          "label": "reseller_price",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "reseller_price",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "domain_ranking": {
+        "edit": {
+          "label": "domain_ranking",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "domain_ranking",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "name",
+        "website_url",
+        "logo"
+      ],
+      "editRelations": [
+        "publication_categories"
+      ],
+      "edit": [
+        [
+          {
+            "name": "name",
+            "size": 6
+          },
+          {
+            "name": "website_url",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "logo",
+            "size": 6
+          },
+          {
+            "name": "turnaround_time",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "price",
+            "size": 4
+          },
+          {
+            "name": "is_do_follow",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "category",
+            "size": 6
+          },
+          {
+            "name": "domain_authority",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "image",
+            "size": 6
+          },
+          {
+            "name": "news",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "is_sponsored",
+            "size": 6
+          },
+          {
+            "name": "is_exclusive",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "requirements",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "popularity_rank",
+            "size": 4
+          },
+          {
+            "name": "is_indexed",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "is_featured",
+            "size": 4
+          },
+          {
+            "name": "internal_cost",
+            "size": 4
+          },
+          {
+            "name": "min_turnaround_time_in_days",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "max_turnaround_time_in_days",
+            "size": 4
+          },
+          {
+            "name": "reseller_price",
+            "size": 4
+          },
+          {
+            "name": "domain_ranking",
+            "size": 4
+          }
+        ]
+      ]
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

@@ -1,0 +1,82 @@
+{
+  "kind": "collectionType",
+  "collectionName": "purchased_publications",
+  "info": {
+    "singularName": "purchased-publication",
+    "pluralName": "purchased-publications",
+    "displayName": "Purchased Publication",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "publication": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::publication.publication"
+    },
+    "email": {
+      "type": "email"
+    },
+    "order": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::order.order"
+    },
+    "profile": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::profile.profile",
+      "inversedBy": "purchased_publications"
+    },
+    "article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::article.article",
+      "inversedBy": "purchased_publication"
+    },
+    "is_accounting_completed": {
+      "type": "boolean"
+    },
+    "accounting_completion_date": {
+      "type": "datetime"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "site": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::site.site",
+      "inversedBy": "purchased_publications"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "paid",
+        "canceled"
+      ],
+      "default": "paid"
+    },
+    "ref_id": {
+      "type": "integer"
+    },
+    "purchase_date": {
+      "type": "datetime"
+    },
+    "publication_internal_cost": {
+      "type": "decimal"
+    },
+    "publication_sale_price": {
+      "type": "decimal"
+    },
+    "is_publisher_paid": {
+      "type": "boolean"
+    },
+    "is_reseller_paid": {
+      "type": "boolean"
+    }
+  }
+}

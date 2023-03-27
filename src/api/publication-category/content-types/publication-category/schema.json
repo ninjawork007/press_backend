@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "publication_categories",
+  "info": {
+    "singularName": "publication-category",
+    "pluralName": "publication-categories",
+    "displayName": "Publication Category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "publications": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::publication.publication",
+      "mappedBy": "publication_categories"
+    }
+  }
+}

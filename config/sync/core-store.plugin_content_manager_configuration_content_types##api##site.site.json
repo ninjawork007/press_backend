@@ -1,0 +1,430 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::site.site",
+  "value": {
+    "uid": "api::site.site",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "name",
+      "defaultSortBy": "name",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "name": {
+        "edit": {
+          "label": "name",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "name",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "description": {
+        "edit": {
+          "label": "description",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "description",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "logo": {
+        "edit": {
+          "label": "logo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "logo",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "ogImage": {
+        "edit": {
+          "label": "ogImage",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "ogImage",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "customDomain": {
+        "edit": {
+          "label": "customDomain",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "customDomain",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "subdomain": {
+        "edit": {
+          "label": "subdomain",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "subdomain",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "email": {
+        "edit": {
+          "label": "email",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "email",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "site_publication_categories": {
+        "edit": {
+          "label": "site_publication_categories",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "site_publication_categories",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "site_publications": {
+        "edit": {
+          "label": "site_publications",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "id"
+        },
+        "list": {
+          "label": "site_publications",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "primary_color": {
+        "edit": {
+          "label": "primary_color",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "primary_color",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "secondary_color": {
+        "edit": {
+          "label": "secondary_color",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "secondary_color",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "is_live": {
+        "edit": {
+          "label": "is_live",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "is_live",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "is_sendgrid_connected": {
+        "edit": {
+          "label": "is_sendgrid_connected",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "is_sendgrid_connected",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "email_password": {
+        "edit": {
+          "label": "email_password",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "email_password",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "has_updated_publications": {
+        "edit": {
+          "label": "has_updated_publications",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "has_updated_publications",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "orders": {
+        "edit": {
+          "label": "orders",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "id"
+        },
+        "list": {
+          "label": "orders",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "purchased_publications": {
+        "edit": {
+          "label": "purchased_publications",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "id"
+        },
+        "list": {
+          "label": "purchased_publications",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "owner": {
+        "edit": {
+          "label": "owner",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "owner",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "profiles": {
+        "edit": {
+          "label": "profiles",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "profiles",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "use_base_publication_pricing": {
+        "edit": {
+          "label": "use_base_publication_pricing",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "use_base_publication_pricing",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "name",
+        "description",
+        "logo"
+      ],
+      "editRelations": [
+        "site_publication_categories",
+        "site_publications",
+        "orders",
+        "purchased_publications",
+        "owner",
+        "profiles"
+      ],
+      "edit": [
+        [
+          {
+            "name": "name",
+            "size": 6
+          },
+          {
+            "name": "description",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "logo",
+            "size": 6
+          },
+          {
+            "name": "ogImage",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "customDomain",
+            "size": 6
+          },
+          {
+            "name": "subdomain",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "email",
+            "size": 6
+          },
+          {
+            "name": "primary_color",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "secondary_color",
+            "size": 6
+          },
+          {
+            "name": "is_live",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "is_sendgrid_connected",
+            "size": 4
+          },
+          {
+            "name": "email_password",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "has_updated_publications",
+            "size": 4
+          },
+          {
+            "name": "use_base_publication_pricing",
+            "size": 4
+          }
+        ]
+      ]
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

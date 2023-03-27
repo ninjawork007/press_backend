@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "site_publications",
+  "info": {
+    "singularName": "site-publication",
+    "pluralName": "site-publications",
+    "displayName": "Site Publication",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "publication": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::publication.publication"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "site": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::site.site",
+      "inversedBy": "site_publications"
+    },
+    "is_hidden": {
+      "type": "boolean",
+      "default": false
+    },
+    "is_featured": {
+      "type": "boolean"
+    }
+  }
+}
