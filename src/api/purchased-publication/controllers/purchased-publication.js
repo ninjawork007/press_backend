@@ -35,6 +35,25 @@ module.exports = createCoreController(
             },
           },
         };
+      } else if (status == "purchased") {
+        query = {
+          status: {
+            $ne: "canceled",
+          },
+          article: {
+            $and: [
+              {
+                status: {
+                  $ne: "canceled",
+                },
+              },
+            ],
+          },
+          createdAt: {
+            $gte: start_date,
+            $lte: end_date,
+          },
+        };
       } else {
         query = {
           status: {

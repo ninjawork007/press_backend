@@ -27,7 +27,7 @@ module.exports = {
     const publicationName = purchasedPublication.publication.name;
     const questionnaire = campaign.questionnaire;
 
-    const articleUrl = `https://app.pressbackend.com/campaigns/${campaign.id}`;
+    const articleUrl = `https://app.pressbackend.com/campaigns/${campaign.id}/articles/${article.id}`;
     console.log({ questionnaire });
 
     if (is_written_by_user) {
@@ -98,6 +98,7 @@ module.exports = {
 
     const profile = campaign.profile;
 
+    const articleId = article.id;
     const campaignId = campaign.id;
     const campaignName = campaign.name;
 
@@ -109,7 +110,7 @@ module.exports = {
     const site_domain = site.customDomain
       ? `https://${site.customDomain}`
       : `https://${site.subdomain}.pressbackend.com`;
-    let articleUrl = `${site_domain}/campaigns/${campaignId}`;
+    let articleUrl = `${site_domain}/campaigns/${campaignId}/articles/${articleId}`;
     const siteName = site.name;
     const siteEmail = site.email;
 
@@ -164,7 +165,7 @@ module.exports = {
     } else if (updated_status === "reviewing") {
       if (approvedForPublishing) {
         console.log("sending article to publisher for publishing");
-        articleUrl = `https://app.pressbackend.com/campaigns/${campaignId}`;
+        articleUrl = `https://app.pressbackend.com/campaigns/${campaignId}/articles/${article.id}`;
 
         return emails.sendNoticeToPublishToAscend({
           clientName,
@@ -173,7 +174,7 @@ module.exports = {
         });
       } else {
         console.log("sending article to publisher for review");
-        articleUrl = `https://app.pressbackend.com/campaigns/${campaignId}`;
+        articleUrl = `https://app.pressbackend.com/campaigns/${campaignId}/articles/${article.id}`;
 
         return emails.sendArticleEditsToManagers({
           clientName,

@@ -104,7 +104,7 @@ async function sendEditsToAscend({
       .sendTemplatedEmail(
         {
           // required
-          to: ascend_email,
+          to: sender_email, //send edits to ourselves because we handle article edits
 
           // optional if /config/plugins.js -> email.settings.defaultFrom is set
           from: sender_email,
@@ -287,7 +287,7 @@ async function sendArticleEditsToManagers({
       .service("email")
       .sendTemplatedEmail(
         {
-          to: ascend_email,
+          to: sender_email, //send article edits to ourselves
           from: sender_email,
         },
         {
@@ -324,7 +324,7 @@ async function sendArticleRequestToManagers({
       .service("email")
       .sendTemplatedEmail(
         {
-          to: ascend_email,
+          to: sender_email, //send article request to ourselves because we write the articles
           from: sender_email,
         },
         {
