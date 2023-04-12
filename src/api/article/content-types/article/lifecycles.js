@@ -27,8 +27,7 @@ module.exports = {
     const publicationName = purchasedPublication.publication.name;
     const questionnaire = campaign.questionnaire;
 
-    const articleUrl = `https://app.pressbackend.com/campaigns/${campaign.id}/articles/${article.id}`;
-    console.log({ questionnaire });
+    const articleUrl = `https://app.pressbackend.com/campaigns/${campaign.id}/articles/${result.id}`;
 
     if (is_written_by_user) {
       return emails.sendArticleUploadToManagers({
