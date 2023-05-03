@@ -5,5 +5,10 @@ module.exports = {
       path: "/stats/",
       handler: "campaign.getStats",
     },
+    {
+      method: "GET",
+      path: "/campaign-list",
+      handler: "campaign.getHits",
+    },
   ]
 }

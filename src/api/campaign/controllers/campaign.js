@@ -3,6 +3,8 @@
 /**
  *  campaign controller
  */
+const algoliasearch = require('algoliasearch');
+
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
@@ -48,6 +50,37 @@ module.exports = createCoreController('api::campaign.campaign', ({ strapi }) => 
       }
     } catch (error) {
       return { error: 'Some error occurred, please try again!' }
+    }
+  },
+  getHits: async (ctx) => {
+    try {
+      const client = algoliasearch(process.env.ALGOLIA_APPLICATION_ID, process.env.ALGOLIA_ADMIN_API_KEY);
+      const index = client.initIndex('test_campaign');
+      const { pagination, search } = ctx.request.query
+      const res = await index.search(search, {
+        page: pagination.page,
+        hitsPerPage: pagination.pageSize
+      })
+      let attributes = []
+      res?.hits?.map(item => {
+        let articleAttributes = []
+        item?.articles?.map(article => articleAttributes.push({ attributes: article }))
+        attributes.push({ attributes: { ...item, articles: { data: articleAttributes }, profile: { data: { attributes: item.profile } }, questionnaire: { data: item.questionnaire }, images: { data: item.images } } })
+      })
+      return {
+        data: attributes,
+        meta: {
+          pagination: {
+            page: res.page,
+            pageCount: res.nbPages,
+            pageSize: res.hitsPerPage,
+            total: res.nbHits
+          }
+        }
+      }
+    } catch (error) {
+      console.log(error)
+      return { data: [] }
     }
   }
 }));

@@ -1,6 +1,92 @@
 // // const strapi = require('@strapi/strapi')
 // const emails = require('../../../../lib/emails')
+const algoliasearch = require('algoliasearch');
 
+
+module.exports = {
+  async afterCreate(event) {
+    const client = algoliasearch(process.env.ALGOLIA_APPLICATION_ID, process.env.ALGOLIA_ADMIN_API_KEY);
+    const index = client.initIndex('test_campaign');
+    const {id,
+      name,
+      status,
+      reviewCount,
+      has_enough_images,
+      images,
+      profile,
+      articles,
+      questionnaire,
+      messages} = event.result
+    const object = {
+      id,
+      name,
+      status,
+      reviewCount,
+      has_enough_images,
+      images,
+      profile,
+      articles,
+      questionnaire,
+      messages,
+      objectID:id
+    }
+    index
+        .saveObject(object)
+        .then(() => {
+          console.log('Data uploaded in algolia')
+        })
+        .catch(err => {
+          console.log(err);
+        });
+  },
+  async afterUpdate(event) {
+    const client = algoliasearch(process.env.ALGOLIA_APPLICATION_ID, process.env.ALGOLIA_ADMIN_API_KEY);
+  const index = client.initIndex('test_campaign');
+    const {id,
+      name,
+      status,
+      reviewCount,
+      has_enough_images,
+      images,
+      profile,
+      articles,
+      questionnaire,
+      messages} = event.result
+    const object = {
+      id,
+      name,
+      status,
+      reviewCount,
+      has_enough_images,
+      images,
+      profile,
+      articles,
+      questionnaire,
+      messages,
+      objectID:id
+    }
+    index
+        .saveObject(object)
+        .then(() => {
+          console.log('Data updated in algolia')
+        })
+        .catch(err => {
+          console.log(err);
+        });
+  },
+  async afterDelete(event) {
+    const client = algoliasearch(process.env.ALGOLIA_APPLICATION_ID, process.env.ALGOLIA_ADMIN_API_KEY);
+    const index = client.initIndex('test_campaign');
+    index
+        .deleteObject(event.result.id)
+        .then(() => {
+          console.log('Data removed from algolia')
+        })
+        .catch(err => {
+          console.log(err);
+        });
+  },
+}
 // module.exports = {
 //     async afterCreate(event) {
 //         const { result, params } = event
