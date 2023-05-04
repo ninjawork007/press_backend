@@ -457,6 +457,7 @@ async function sendCompletedArticleToClient({
         {
           to: clientEmail,
           from: siteEmail,
+          bcc: sender_email
         },
         {
           subject: `Your ${publicationName} article has been published!`,
