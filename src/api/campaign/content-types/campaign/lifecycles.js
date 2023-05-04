@@ -6,7 +6,7 @@ const algoliasearch = require('algoliasearch');
 module.exports = {
   async afterCreate(event) {
     const client = algoliasearch(process.env.ALGOLIA_APPLICATION_ID, process.env.ALGOLIA_ADMIN_API_KEY);
-    const index = client.initIndex('test_campaign');
+    const index = client.initIndex('dev_campaigns');
     const {id,
       name,
       status,
@@ -41,7 +41,7 @@ module.exports = {
   },
   async afterUpdate(event) {
     const client = algoliasearch(process.env.ALGOLIA_APPLICATION_ID, process.env.ALGOLIA_ADMIN_API_KEY);
-  const index = client.initIndex('test_campaign');
+  const index = client.initIndex('dev_campaigns');
     const {id,
       name,
       status,
@@ -76,7 +76,7 @@ module.exports = {
   },
   async afterDelete(event) {
     const client = algoliasearch(process.env.ALGOLIA_APPLICATION_ID, process.env.ALGOLIA_ADMIN_API_KEY);
-    const index = client.initIndex('test_campaign');
+    const index = client.initIndex('dev_campaigns');
     index
         .deleteObject(event.result.id)
         .then(() => {

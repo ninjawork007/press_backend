@@ -55,11 +55,11 @@ module.exports = createCoreController('api::campaign.campaign', ({ strapi }) => 
   getHits: async (ctx) => {
     try {
       const client = algoliasearch(process.env.ALGOLIA_APPLICATION_ID, process.env.ALGOLIA_ADMIN_API_KEY);
-      const index = client.initIndex('test_campaign');
+      const index = client.initIndex('dev_campaigns');
       const { pagination, search } = ctx.request.query
       const res = await index.search(search, {
-        page: pagination.page,
-        hitsPerPage: pagination.pageSize
+        page: pagination?.page,
+        hitsPerPage: pagination?.pageSize
       })
       let attributes = []
       res?.hits?.map(item => {
