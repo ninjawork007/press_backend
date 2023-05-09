@@ -4,6 +4,8 @@
  *  purchased-publication controller
  */
 
+const algoliasearch = require('algoliasearch');
+
 const { createCoreController } = require("@strapi/strapi").factories;
 
 module.exports = createCoreController(
@@ -133,5 +135,55 @@ module.exports = createCoreController(
 
       return { purchasedPublications, totals };
     },
+    getHits: async (ctx) => {
+      try {
+        const client = algoliasearch(process.env.ALGOLIA_APPLICATION_ID, process.env.ALGOLIA_ADMIN_API_KEY);
+        const index = client.initIndex('dev_publications');
+        const { pagination, searchQuery, filters } = ctx.request.query
+        console.log('filters >>>', filters)
+        let facet = ''
+        if (filters?.status["NOT"]) {
+          facet = `NOT status:${filters.status["NOT"]}`
+        }
+        if (filters?.profile?.id) {
+          facet = `${facet} AND profile.id=${filters?.profile?.id}`
+        }
+        if (filters?.ref_id) {
+          facet = `${facet} AND ref_id=${filters?.ref_id}`
+        }
+        if (filters?.site?.id) {
+          facet = `${facet} AND site.id=${filters?.site?.id}`
+        }
+        if (filters?.article?.status) {
+          facet = `${facet} AND article.status:${filters?.article?.status}`
+        }
+        if (filters?.article?.id) {
+          facet = `${facet} AND has_no_artcile:true`
+        }
+        const res = await index.search(searchQuery, {
+          page: pagination?.page,
+          hitsPerPage: pagination?.pageSize,
+          filters: facet
+        })
+        let attributes = []
+        res?.hits?.map(item => {
+          attributes.push({ attributes: { ...item, article: { data: { attributes: item.article } }, publication: { data: { attributes: item.publication } }, order: { data: { attributes: item.order } }, profile: { data: { attributes: item.profile } }, site: { data: { attributes: item.site } }, images: { data: item.images } } })
+        })
+        return {
+          data: attributes,
+          meta: {
+            pagination: {
+              page: res?.page ?? 0,
+              pageCount: res?.nbPages ?? 0,
+              pageSize: res?.hitsPerPage ?? 0,
+              total: res?.nbHits ?? 0
+            }
+          }
+        }
+      } catch (error) {
+        console.log(error)
+        return { data: [] }
+      }
+    }
   })
 );
